@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  background: url("drums-wall.jpg");
+  background-attachment: fixed;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 625px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<link rel="stylesheet" href="joshbiostyle.css">
+<link rel="icon" type="image/x-icon" href="hashbrown_small.png">
+<title>Music</title>
+</head>
+<body>
+
+	<center>
+	<div class="navbar" style="background-color:black">
+		<img src=josh-title.png width=25%>
+	</div>
+	</center>
+
+	<div class="navbar">
+		<a href="josh_biohome.htm">Home</a>
+		<a href="josh_biogallery.htm">Gallery</a>
+		<a href="josh_music.htm">Favourite Songs</a>
+		<div class="dropdown">
+			<button class="dropbtn"> Other Websites
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="josh_biofav.htm">Main Article</a>
+				<a href="https://open.spotify.com/" target="_blank">Spotify</a>
+				<a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+				<a href="https://www.google.com/maps/" target="_blank">Google Maps</a>
+			</div>
+		</div>
+	</div>
+
+	<table style="margin-left:auto;margin-right:auto" cellpadding=0 width=75%>
+		<!title table>
+		<tr>
+			<td><h1 style="color:#FFFFFF">My Favourite Songs</h1></td>
+		</tr>
+	</table><br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7xyYsOvq5Ec3P4fr6mM9fD?utm_source=generator" width="100%" height="700" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<div class="mySlides fade">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0zANeX4R6uWb82gCQAguOD?utm_source=generator" width="100%" height="700" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<div class="mySlides fade">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/68HocO7fx9z0MgDU0ZPHro?utm_source=generator" width="100%" height="700" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<div class="mySlides fade">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1JdKrFyoU05abww0Zv0ayQ?utm_source=generator" width="100%" height="700" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<div class="mySlides fade">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4v1WbXCkegXLnHTXPe7yzx?utm_source=generator" width="100%" height="700" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+changeBackground(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
