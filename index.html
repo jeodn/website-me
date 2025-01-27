@@ -18,101 +18,140 @@
             <span class="logo"><a href="#">joshy.veee</a></span>
             <ul>
                 <li><a href="#about-me">about me</a></li>
-                <li><a href="#projects">projects</a></li>
+                <li><a href="#projects">gallery</a></li>
                 <li><a href="#skills">click me!!!</a></li>
             </ul>
         </div>
     </header>
     <div class="container">
+
+    
+    
+
+        
+
+
+
+        
+    <section class="about-me">
     <main>
         <div class="left">
-            <h1>yahallo I'm<br>
+            <h1>hello I'm<br>
                 josh villas
             </h1>
             <h2>
-                website far from finished <br> i'll add my projects later
+                i like math and stats and python
             </h2>
             <div class="btn">
-                <button class="cv"><a id="pdf" href="./04 Portfolio/assets/images/villasjo-resume.pdf" target="_fblank">My Resume</a></button>
-                <button class="contact"><a href="#contacts">Get in Touch</a></button>
+                
+                
+                <button class="cv" id="previewButton">View Resume</button>
+                <button class="contact"><a id="pdf" href="./04 Portfolio/assets/images/Villas_Resume_SW.pdf" target="_blank" style="color: #ffffff;">Download Resume</a></button>
+                
+                
             </div>
+            
+            <div id="previewOverlay" class="preview-overlay">
+                <img src="./04 Portfolio/assets/images/resume-preview.jpg" alt="Preview Image">
+            </div>
+            
+            <script>
+                const previewButton = document.getElementById('previewButton');
+                const previewOverlay = document.getElementById('previewOverlay');
+            
+                // Show the image preview
+                previewButton.addEventListener('click', () => {
+                  previewOverlay.classList.add('show');
+                });
+            
+                // Hide the image preview when clicking outside
+                previewOverlay.addEventListener('click', () => {
+                  previewOverlay.classList.remove('show');
+                });
+            </script>
 
         </div>
         <div class="right">
-            <img src="./04 Portfolio/assets/images/joshportrait.jpg" alt="">
+            <img src="./04 Portfolio/assets/images/portrait-square.jpg" alt="">
         </div>
     </main>
+    </section>
 
-    <section class="projects">
-      <h2 id="projects" class="target">Projects</h2>
-      <div class="cards">
-          <div class="card">
-              <div class="img-project">
-                  <img src="./04 Portfolio/assets/images/blender_isoroom.png" alt="" width="100%" >
-              </div>
-              <div class="description-project">
-                  <span class="title-project">Not my room</span>
-                  <span class="tag-project">Technologies: Blender</span>
-              </div>
-              </div>
-          <div class="card">
-              <div class="img-project">
-                  <img src="./04 Portfolio/assets/images/blender_ricecook.png" alt="" width="100%">
-              </div>
-              <div class="description-project">
-                  <span class="title-project">My rice cooker</span>
-                  <span class="tag-project">Technologies: Blender</span>
-              </div>
-              </div>
-          <div class="card">
-              <div class="img-project">
-                  <img src="./04 Portfolio/assets/images/blender_water.png" alt="" width="100%">
-              </div>
-              <div class="description-project">
-                  <span class="title-project">Water simulation</span>
-                  <span class="tag-project">Technologies: Blender</span>
-              </div>
-          </div>
-      </div>
-      </section>
+    
 
     <section class="about-me">
-        <h2 id="about-me" class="target">About me</h2>
-        <p>I study how math and software can be applied to achieve real goals. I also have interest in the mechanics of computer networks and building/fixing computer hardware.
+        <h1 id="about-me" class="target">About me</h1>
+        <p>I study how math and software can be applied to achieve real goals. I also have interest in the mechanics of computer networks and building/fixing computer hardware.<br><br>
 
-            I was born in Manila and educated in the GTA. I play the drums and Cities: Skylines.</p>
+        I was born in Manila and educated in the GTA. I play the drums and Cities: Skylines.</p>
     </section>
     <section class="contacts" id="contacts">
         <div class="contact">
             <div class="icon">
-                <i class="far fa-smile"></i>
+                <a href="https://github.com/jeodn/"><i class="fab fa-github"></i></a>
             </div>
-            <span class="title">Nickname?</span>
-            <span class="description">joshy veee!</span>
+            <span class="title"><a href="https://github.com/jeodn/">Github</a></span>
+            <span class="description">https://github.com/jeodn/</span>
         </div>
         <div class="contact">
             <div class="icon">
-                <i class="far fa-envelope"></i>
+                <a href="mailto:joshdrvillas@gmail.com"><i class="far fa-envelope"></i></a>
             </div>
             <span class="title"><a href="mailto:joshdrvillas@gmail.com">E-mail</a></span>            
             <span class="description">joshdrvillas@gmail.com</span>            
         </div>
         <div class="contact">
             <div class="icon">
-                <i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/joshy.veee" target="_fblank"><i class="fab fa-instagram"></i></a>
             </div>
             <span class="title"><a href="https://instagram.com/joshy.veee" target="_fblank">Instagram</a></span>
             <span class="description">@joshy.veee</span>
         </div>
         <div class="contact">
             <div class="icon">
-                <i class="fab fa-twitter"></i>
+                <a href="https://www.linkedin.com/in/joshdrvillas/" target="_fblank"><i class="fab fa-linkedin"></i></a>
             </div>
             <span class="title"><a href="https://www.linkedin.com/in/joshdrvillas/" target="_fblank">LinkedIn</a></span>
             <span class="description">jeodn</span>
         </div>
     </section>
     
+
+    <section class="projects">
+        <h1 id="projects" class="target">Pictures I think are cool</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="img-project">
+                    <img src="./04 Portfolio/assets/images/blender_isoroom.png" alt="" width="100%" >
+                </div>
+                <div class="description-project">
+                    <span class="title-project">Not my room</span>
+                    <span class="tag-project">Technologies: Blender</span>
+                </div>
+                </div>
+            <div class="card">
+                <div class="img-project">
+                    <img src="./04 Portfolio/assets/images/blender_ricecook.png" alt="" width="100%">
+                </div>
+                <div class="description-project">
+                    <span class="title-project">My rice cooker</span>
+                    <span class="tag-project">Technologies: Blender</span>
+                </div>
+                </div>
+            <div class="card">
+                <div class="img-project">
+                    <img src="./04 Portfolio/assets/images/blender_water.png" alt="" width="100%">
+                </div>
+                <div class="description-project">
+                    <span class="title-project">Water simulation</span>
+                    <span class="tag-project">Technologies: Blender</span>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+    <!--
     <section class="skills">
         <h2 id="skills" class="target" >My skills</h2>
         <div class="cards-skills">
@@ -120,14 +159,15 @@
             <div class="card-skill"><i class="fab fa-python"></i></div>
         </div>
     </section>
+    -->
+
+
     </div>
     <footer>
         <span>
             <div class="card-serve">
                 <i class="fas fa-code"></i>
-             I am <a href="https://github.com/jeodn" target="_blank">
-                
-                 jeodn</a>
+             I am <a href="https://github.com/jeodn" target="_blank">jeodn</a>
         </span>
     </footer>
     <div class="goto-top">
