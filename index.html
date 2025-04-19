@@ -1,177 +1,267 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>jeodn.co</title>
-    <link rel="stylesheet" href="./style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="icon" href="./04 Portfolio/assets/images/hashbrown_small.png">
-</head>
-<body>
-    <div id="top"></div>
-    <header>
-        <div class="content">
-            <span class="logo"><a href="#">joshy.veee</a></span>
-            <ul>
-                <li><a href="#about-me">about me</a></li>
-                <li><a href="#projects">gallery</a></li>
-                <li><a href="#skills">click me!!!</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="container">
-
+    <link rel="icon" type="image/x-icon" href="assets/hashbrown_small.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        background-color: #242c34;
+      }
+      ul.timeline {
+          list-style-type: none;
+          position: relative;
+      }
+      ul.timeline:before {
+          content: ' ';
+          background: #d4d9df;
+          display: inline-block;
+          position: absolute;
+          left: 29px;
+          width: 2px;
+          height: 100%;
+          z-index: 400;
+      }
+      ul.timeline > li {
+          margin: 20px 0;
+          padding-left: 20px;
+      }
+      ul.timeline > li:before {
+          content: ' ';
+          background: #242c34;
+          display: inline-block;
+          position: absolute;
+          border-radius: 50%;
+          border: 3px solid white;
+          left: 20px;
+          width: 20px;
+          height: 20px;
+          z-index: 400;
+      }
+      .small-middle-container{
+        margin: auto;
+        width: 40%;
+      }
+      small {
+        color: #9ca9b5
+      }
+    </style>
+  </head>
+  
+  <body>
     
-    
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-sm bg-dark py-4 border-bottom border-2 border-secondary">
 
-        
-
-
-
-        
-    <section class="about-me">
-    <main>
-        <div class="left">
-            <br><br><br><h1>hello i'm<br>
-                josh villas
-            </h1>
-            <h2>
-                i like math and stats and python
-            </h2>
-            <div class="btn">
-                
-                
-                <button class="cv" id="previewButton">View Resume</button>
-                <button class="contact"><a id="pdf" href="./04 Portfolio/assets/images/Villas_Resume_V2_IT.pdf" target="_blank" style="color: #ffffff;">Download Resume</a></button>
-                
-                
-            </div>
-            
-            <div id="previewOverlay" class="preview-overlay">
-                <img src="./04 Portfolio/assets/images/resume-preview.jpg" alt="Preview Image">
-            </div>
-            
-            <script>
-                const previewButton = document.getElementById('previewButton');
-                const previewOverlay = document.getElementById('previewOverlay');
-            
-                // Show the image preview
-                previewButton.addEventListener('click', () => {
-                  previewOverlay.classList.add('show');
-                });
-            
-                // Hide the image preview when clicking outside
-                previewOverlay.addEventListener('click', () => {
-                  previewOverlay.classList.remove('show');
-                });
-            </script>
-
-        </div>
-        <div class="right">
-            <img src="./04 Portfolio/assets/images/portrait-square.jpg" alt="">
-        </div>
-    </main>
-    </section>
-
-    
-
-    <section class="about-me">
-        <h1 id="about-me" class="target">About me</h1>
-        <p>I study how math and software can be applied to achieve real goals. I also have an interest in computer architecture and hardware.<br><br>
-
-            I was born in Manila and educated in the GTA. I play the drums and Cities: Skylines.</p>
-    </section>
-    <section class="contacts" id="contacts">
-        <div class="contact">
-            <div class="icon">
-                <a href="https://github.com/jeodn/"><i class="fab fa-github"></i></a>
-            </div>
-            <span class="title"><a href="https://github.com/jeodn/">Github</a></span>
-            <span class="description">https://github.com/jeodn/</span>
-        </div>
-        <div class="contact">
-            <div class="icon">
-                <a href="mailto:joshdrvillas@gmail.com"><i class="far fa-envelope"></i></a>
-            </div>
-            <span class="title"><a href="mailto:joshdrvillas@gmail.com">E-mail</a></span>            
-            <span class="description">joshdrvillas@gmail.com</span>            
-        </div>
-        <div class="contact">
-            <div class="icon">
-                <a href="https://instagram.com/joshy.veee" target="_fblank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <span class="title"><a href="https://instagram.com/joshy.veee" target="_fblank">Instagram</a></span>
-            <span class="description">@joshy.veee</span>
-        </div>
-        <div class="contact">
-            <div class="icon">
-                <a href="https://www.linkedin.com/in/joshdrvillas/" target="_fblank"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <span class="title"><a href="https://www.linkedin.com/in/joshdrvillas/" target="_fblank">LinkedIn</a></span>
-            <span class="description">jeodn</span>
-        </div>
-    </section>
-    
-
-    <section class="projects">
-        <h1 id="projects" class="target">Pictures I think are cool</h1>
-        <div class="cards">
-            <div class="card">
-                <div class="img-project">
-                    <img src="./04 Portfolio/assets/images/blender_isoroom.png" alt="" width="100%" >
-                </div>
-                <div class="description-project">
-                    <span class="title-project">Not my room</span>
-                    <span class="tag-project">Technologies: Blender</span>
-                </div>
-                </div>
-            <div class="card">
-                <div class="img-project">
-                    <img src="./04 Portfolio/assets/images/blender_ricecook.png" alt="" width="100%">
-                </div>
-                <div class="description-project">
-                    <span class="title-project">My rice cooker</span>
-                    <span class="tag-project">Technologies: Blender</span>
-                </div>
-                </div>
-            <div class="card">
-                <div class="img-project">
-                    <img src="./04 Portfolio/assets/images/blender_water.png" alt="" width="100%">
-                </div>
-                <div class="description-project">
-                    <span class="title-project">Water simulation</span>
-                    <span class="tag-project">Technologies: Blender</span>
-                </div>
-            </div>
-        </div>
-        </section>
-
-
-    <!--
-    <section class="skills">
-        <h2 id="skills" class="target" >My skills</h2>
-        <div class="cards-skills">
-            <div class="card-skill"><i class="fab fa-java"></i></div>
-            <div class="card-skill"><i class="fab fa-python"></i></div>
-        </div>
-    </section>
-    -->
-
-
-    </div>
-    <footer>
-        <span>
-            <div class="card-serve">
-                <i class="fas fa-code"></i>
-             I am <a href="https://github.com/jeodn" target="_blank">jeodn</a>
-        </span>
-    </footer>
-    <div class="goto-top">
-        <a href="#top"><i class="fas fa-arrow-up"></i></a>
+      <div class="container">
+        <!-- Links -->
+        <a class="navbar-brand text-light" href="index.html"><b>joshy.veee</b></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="blog.html">My Thoughts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">Resume</a>
+          </li>
+        </ul>
       </div>
-</body>
+
+    </nav>
+
+
+
+
+    <div class="container mt-5 text-light">
+        <div class="row d-flex align-items-center h-100 text-start">
+          <div class="col-sm-3"></div>
+
+          <div class="col-sm-3 d-flex justify-content-end ">
+            <img class="img-fluid rounded-circle" style="max-width: 80%;" src="assets/portrait-square.jpg" alt="me">
+          </div>
+          
+          <div class="col-sm-3">
+            <h3 class="mb-3">hello, i'm 
+                josh villas</h3>
+            
+            <p>nice to meet you</p>
+
+            <p>i study computer science and applied mathematics. my interests span software engineering, computer architecture & hardware, statistics & machine learning, finance, and more.</p>
+            
+            <!-- Resume Buttons -->
+            <div class="mt-4">
+              <button type="button" class="btn btn-secondary resume-btn" data-bs-toggle="modal" data-bs-target="#resumePreviewModal">
+                Preview Resume
+              </button>
+              <a href="./assets/RESUME.pdf" download class="btn btn-secondary resume-btn">
+                Download Resume
+                <!--GET RID OF PUBLICLY AVAILABLE INFORMATION-->
+              </a>
+            </div>
+
+          </div>
+          
+          <div class="col-sm-3"></div>
+    </div>
+
+    <!--Work -->
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h4>Some work</h4>
+          <ul class="timeline">
+            <li>
+              <h5 class="mb-1">Audiovisual Team</h5>
+              <h6 class="mb-0">Every Nation</h6>
+              <small>Jun 2021 – Present</small>
+              <p>I've been doing this one for a while. I do audio visual work here. I've always had a passing interest in photography and videography which is combined with my love for tech in my activities here.</p>
+            </li>
+            <li>
+              <h5 class="mb-1">Youth in Policing Initiative</h5>
+              <h6 class="mb-0">Every Nation</h6>
+              <small>Jul 2023 – Aug 2023</small>
+              <p>I thought this was pretty fun. It was a nice opportunity to work for the police as a high schooler, as we got an inside look into parts of their operations the public doesn't normally see.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <!--projects-->
+    <div class="container mt-5 border-top border-2 border-secondary py-4">
+      <h3 class="text-center mb-4">Projects</h3>
+    
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+    
+        <!-- Project 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Home Server</h5>
+              <p class="card-text">I used old office computer parts to make a server that I use to host local website interfaces and Minecraft servers.</p>
+              <span class="badge bg-secondary">Hardware</span>
+              <span class="badge bg-secondary">Networking</span>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-outline-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Huffman File Compressor</h5>
+              <p class="card-text">Implemented lossless file compression using Huffman encoding with bit manipulation.</p>
+              <span class="badge bg-secondary">Python</span>
+              <span class="badge bg-secondary">Algorithms</span>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-outline-primary btn-sm">Read more</a>
+              <a href="#" class="btn btn-outline-secondary btn-sm">Live Demo</a>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Personal Computer</h5>
+              <p class="card-text">
+                I built my PC years ago and have been upgrading it ever since. Thanks to this PC, I know a LOT more about computer architecture than I would if I never built it. Good prep for CSC258, I think.
+                Recently, I've been tinkering ...
+              </p>
+              <span class="badge bg-secondary">Hardware</span>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-outline-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">UofT Course Prerequisite Visualizer</h5>
+              <p class="card-text">Visualizes university prerequisites using D3.js and Python Flask.</p>
+              <span class="badge bg-secondary">Hardware</span>
+              <span class="badge bg-secondary">D3.js</span>
+              <span class="badge bg-secondary">Flask</span>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="#" class="btn btn-outline-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Project 5 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Virtual Mailbox</h5>
+              <p class="card-text">WIP.</p>
+              <span class="badge bg-secondary">Python</span>
+              <span class="badge bg-secondary">Database</span>
+              <span class="badge bg-secondary">Flask</span>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="posts/nyek.html" class="btn btn-outline-primary btn-sm">Read more</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <br>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 my-4 border-top border-2 border-secondary shadow-sm bg-dark">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+          <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-light">Made using Bootstrap and raw will.</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </footer>
+
+
+    <!-- Resume Preview Modal -->
+    <div class="modal fade" id="resumePreviewModal" tabindex="-1" aria-labelledby="resumePreviewModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resumePreviewModalLabel">Resume Preview</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/RESUME_PREVIEW.png" class="img-fluid" alt="Resume Preview">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="./assets/RESUME.pdf" download class="btn btn-primary">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+
+  </body>
 </html>
