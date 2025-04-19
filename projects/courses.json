@@ -1,0 +1,292 @@
+{
+  "courses": [
+    {
+      "code": "FOO223",
+      "title": "Introduction to Smelling Smalts",
+      "prerequisites": "Nothing",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT102H5",
+      "title": "Introduction to Mathematical Proofs",
+      "prerequisites": "Minimum 70% in Grade 12 Advanced Functions (MHF4U)",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT132H5",
+      "title": "Differential Calculus for Life Sciences",
+      "prerequisites": "Minimum 70% in Grade 12 Advanced Functions (MHF4U)",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT134H5",
+      "title": "Integral Calculus for Life Sciences",
+      "prerequisites": "MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 or MAT135H1 or MATA29H3 or MATA30H3 or MATA31H3",
+      "prerequisites_list": ["or", "MAT132H5", "MAT135H5", "MAT137H5", "MAT157H5", "MAT135H1", "MATA29H3", "MATA30H3", "MATA31H3"]
+    },
+    {
+      "code": "MAT135H5",
+      "title": "Differential Calculus",
+      "prerequisites": "Minimum 70% in Grade 12 Advanced Functions (MHF4U)",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT136H5",
+      "title": "Integral Calculus",
+      "prerequisites": "MAT132H5 or MAT135H5 or MAT137H5 or MAT157H5 or MAT135H1 or MATA29H3 or MATA30H3 or MATA31H3",
+      "prerequisites_list": ["or", "MAT132H5", "MAT135H5", "MAT137H5", "MAT157H5", "MAT135H1", "MATA29H3", "MATA30H3", "MATA31H3"]
+    },
+    {
+      "code": "MAT137H5",
+      "title": "Differential Calculus for Mathematical Sciences",
+      "prerequisites": "Minimum 70% in Grade 12 Advanced Functions (MHF4U) and Minimum 70% in Grade 12 Calculus and Vectors (MCV4U).",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT139H5",
+      "title": "Integral Calculus for Mathematical Sciences",
+      "prerequisites": "MAT137H5 or MAT157H5",
+      "prerequisites_list": ["or", "MAT137H5", "MAT157H5"]
+    },
+    {
+      "code": "MAT157H5",
+      "title": "Analysis I",
+      "prerequisites": "[Minimum 70% in Grade 12 Advanced Functions (MHF4U)] and [Minimum 70% in Grade 12 Calculus and Vectors (MCV4U)]",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT159H5",
+      "title": "Analysis II",
+      "prerequisites": "MAT157H5",
+      "prerequisites_list": "MAT157H5"
+    },
+    {
+      "code": "MAT202H5",
+      "title": "Introduction to Discrete Mathematics",
+      "prerequisites": "MAT102H5 and (MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5)",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT134H5", "MAT136H5", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5", "MAT233H5"]]
+    },
+    {
+      "code": "MAT223H5",
+      "title": "Linear Algebra I",
+      "prerequisites": "Grade 12 Advanced Functions (MHF4U) and Grade 12 Calculus and Vectors (MCV4U or MAT102H5).",
+      "prerequisites_list": ["and", null, ["or", "MAT102H5"]]
+    },
+    {
+      "code": "MAT224H5",
+      "title": "Linear Algebra II",
+      "prerequisites": "MAT102H5 and MAT223H5",
+      "prerequisites_list": ["and", "MAT102H5", "MAT223H5"]
+    },
+    {
+      "code": "MAT232H5",
+      "title": "Calculus of Several Variables",
+      "prerequisites": "MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5",
+      "prerequisites_list": ["or", "MAT134H5", "MAT136H5", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5"]
+    },
+    {
+      "code": "MAT233H5",
+      "title": "Calculus of Several Variables",
+      "prerequisites": "MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or 65% in MAT133Y5",
+      "prerequisites_list": ["or", "MAT134H5", "MAT136H5", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5", "MAT133Y5"]
+    },
+    {
+      "code": "MAT236H5",
+      "title": "Vector Calculus",
+      "prerequisites": "MAT102H5 and (MAT223H5 or MAT240H5) and (MAT232H5 or MAT233H5)",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT223H5", "MAT240H5"], ["or", "MAT232H5", "MAT233H5"]]
+    },
+    {
+      "code": "MAT240H5",
+      "title": "Algebra I",
+      "prerequisites": "(65% in MAT102H5) or MAT157H5 or MAT157Y1",
+      "prerequisites_list": ["or", "MAT102H5", "MAT157H5", "MAT157Y1"]
+    },
+    {
+      "code": "MAT244H5",
+      "title": "Differential Equations I",
+      "prerequisites": "(MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5) and (MAT223H5 or MAT240H5).",
+      "prerequisites_list": ["and", ["or", "MAT134H5", "MAT136H5", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5", "MAT233H5"], ["or", "MAT223H5", "MAT240H5"]]
+    },
+    {
+      "code": "MAT247H5",
+      "title": "Algebra II",
+      "prerequisites": "MAT240H5 or MAT240H1",
+      "prerequisites_list": ["or", "MAT240H5", "MAT240H1"]
+    },
+    {
+      "code": "MAT264H5",
+      "title": "Introduction to Numerical Analysis",
+      "prerequisites": "MAT244H5 or MAT244H1 or MAT267H1 or MATB44H3",
+      "prerequisites_list": ["or", "MAT244H5", "MAT244H1", "MAT267H1", "MATB44H3"]
+    },
+    {
+      "code": "MAT301H5",
+      "title": "Groups and Symmetries",
+      "prerequisites": "MAT102H5 and (MAT202H5 or MAT224H5 or MAT240H5)",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT202H5", "MAT224H5", "MAT240H5"]]
+    },
+    {
+      "code": "MAT302H5",
+      "title": "Introduction to Algebraic Cryptography",
+      "prerequisites": "(MAT224H5 or MAT240H5) and MAT301H5",
+      "prerequisites_list": ["and", ["or", "MAT224H5", "MAT240H5"], "MAT301H5"]
+    },
+    {
+      "code": "MAT305H5",
+      "title": "Elementary Lie Theory",
+      "prerequisites": "[(MAT224H5 or MAT240H5) and MAT236H5] or MAT257Y5",
+      "prerequisites_list": ["or", ["and", ["or", "MAT224H5", "MAT240H5"], "MAT236H5"], "MAT257Y5"]
+    },
+    {
+      "code": "MAT307H5",
+      "title": "Curves and Surfaces",
+      "prerequisites": "[( MAT224H5 or MAT240H5) and (MAT232H5 or MAT233H5)] or MAT257Y5",
+      "prerequisites_list": ["or", ["and", ["or", "MAT224H5", "MAT240H5"], ["or", "MAT232H5", "MAT233H5"]], "MAT257Y5"]
+    },
+    {
+      "code": "MAT309H5",
+      "title": "Introduction to Mathematical Logic",
+      "prerequisites": "MAT257Y5 or [MAT236H5 and (MAT202H5 or MAT224H5 or MAT240H5) and 0.5 additional credit of MAT at the 300+ level]",
+      "prerequisites_list": ["or", "MAT257Y5", ["and", "MAT236H5", ["or", "MAT202H5", "MAT224H5", "MAT240H5"]]]
+    },
+    {
+      "code": "MAT311H5",
+      "title": "Partial Differential Equations",
+      "prerequisites": "MAT257Y5 or (MAT236H5 and MAT244H5)",
+      "prerequisites_list": ["or", "MAT257Y5", ["and", "MAT236H5", "MAT244H5"]]
+    },
+    {
+      "code": "MAT315H5",
+      "title": "Introduction to Number Theory",
+      "prerequisites": "MAT102H5 and [MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5) and (MAT224H5 or MAT240H5) and MAT301H5",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT134H5", "MAT136H5", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5", "MAT233H5"], ["or", "MAT224H5", "MAT240H5"], "MAT301H5"]
+    },
+    {
+      "code": "MAT322H5",
+      "title": "Mathematical Modelling in Biology",
+      "prerequisites": "MAT102H5 and (MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5) and (MAT223H5 or MAT240H5)",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT134H5", "MAT136H5", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5", "MAT233H5"], ["or", "MAT223H5", "MAT240H5"]]
+    },
+    {
+      "code": "MAT332H5",
+      "title": "Introduction to Nonlinear Dynamics and Chaos",
+      "prerequisites": "MAT257Y5 or [MAT236H5 and (MAT223H5 or MAT240H5) and MAT244H5]",
+      "prerequisites_list": ["or", "MAT257Y5", ["and", "MAT236H5", ["or", "MAT223H5", "MAT240H5"], "MAT244H5"]]
+    },
+    {
+      "code": "MAT334H5",
+      "title": "Complex Variables",
+      "prerequisites": "MAT257Y5 or [(MAT232H5 or MAT233H5) and (MAT202H5 or MAT240H5 or 0.5 additional credit of MAT at the 300+ level with a mark of at least 60%)]",
+      "prerequisites_list": ["or", "MAT257Y5", ["and", ["or", "MAT232H5", "MAT233H5"], ["or", "MAT202H5", "MAT240H5"]]]
+    },
+    {
+      "code": "MAT337H5",
+      "title": "Introduction to Real Analysis",
+      "prerequisites": "MAT257Y5 or [(MAT224H5 or MAT240H5) and MAT236H5 and MAT244H5]",
+      "prerequisites_list": ["or", "MAT257Y5", ["and", ["or", "MAT224H5", "MAT240H5"], "MAT236H5", "MAT244H5"]]
+    },
+    {
+      "code": "MAT344H5",
+      "title": "Introduction to Combinatorics",
+      "prerequisites": "MAT102H5 and (MAT223H5 or MAT240H5)",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT223H5", "MAT240H5"]]
+    },
+    {
+      "code": "MAT354H5",
+      "title": "Complex Analysis",
+      "prerequisites": "MAT257Y5 or [(MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5) and (MAT202H5 or MAT240H5 or MAT337H5) and (MAT232H5 or MAT233H5)]",
+      "prerequisites_list": ["or", "MAT257Y5", ["and", ["or", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5"], ["or", "MAT202H5", "MAT240H5", "MAT337H5"], ["or", "MAT232H5", "MAT233H5"]]]
+    },
+    {
+      "code": "MAT382H5",
+      "title": "Mathematics for Teachers",
+      "prerequisites": "(Minimum 60% in MAT134H5 or MAT136H5 or MAT137Y5 or MAT139H5 or MAT157Y5 or MAT159H5 or MAT233H5) and [minimum 60% in MAT102H5 and (MAT223H5 or MAT240H5)] and 0.5 additional credit of MAT at the 200+ level.",
+      "prerequisites_list": ["and", ["or", "MAT134H5", "MAT136H5", "MAT137Y5", "MAT139H5", "MAT157Y5", "MAT159H5", "MAT233H5"], ["and", "MAT102H5", ["or", "MAT223H5", "MAT240H5"]]]
+    },
+    {
+      "code": "MAT386H5",
+      "title": "Topics in Applied Mathematics",
+      "prerequisites": "Appropriate prerequisite requirement(s) will be available on the UTM timetable along with the topic title prior to course registration.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT387H5",
+      "title": "Topics in Mathematics",
+      "prerequisites": "Appropriate prerequisite requirement(s) will be available on the UTM timetable along with the topic title prior to course registration.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT388H5",
+      "title": "Topics in Mathematics",
+      "prerequisites": "Appropriate prerequisite requirement(s) will be available on the UTM timetable along with the topic title prior to course registration.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT392H5",
+      "title": "Ideas of Mathematics",
+      "prerequisites": "MAT202H5 and MAT244H5 and (MAT236H5 or MAT257Y5) and (MAT224H5 or MAT247H5)",
+      "prerequisites_list": ["and", "MAT202H5", "MAT244H5", ["or", "MAT236H5", "MAT257Y5"], ["or", "MAT224H5", "MAT247H5"]]
+    },
+    {
+      "code": "MAT397H5",
+      "title": "Further Studies in Mathematics",
+      "prerequisites": "Permission of instructor and department, a minimum CGPA of 3.5 and completion of at least 4.0 credits of MAT courses.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT398H5",
+      "title": "Further Studies in Mathematics",
+      "prerequisites": "Permission of instructor and department, a minimum CGPA of 3.5 and completion of at least 4.0 credits of MAT courses.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT401H5",
+      "title": "Polynomial Equations and Fields",
+      "prerequisites": "(MAT224H5 or MAT240H5) and (MAT236H5 or MAT257Y5) and MAT301H5",
+      "prerequisites_list": ["and", ["or", "MAT224H5", "MAT240H5"], ["or", "MAT236H5", "MAT257Y5"], "MAT301H5"]
+    },
+    {
+      "code": "MAT402H5",
+      "title": "Classical Geometries",
+      "prerequisites": "MAT102H5 and (MAT232H5 or MAT233H5 or MAT257Y5) and (MAT224H5 or MAT240H5) and 0.5 additional credit of MAT at the 300+ level.",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT232H5", "MAT233H5", "MAT257Y5"], ["or", "MAT224H5", "MAT240H5"]]
+    },
+    {
+      "code": "MAT405H5",
+      "title": "Introduction to Topology",
+      "prerequisites": "MAT257Y5 or [(MAT224H5 or MAT240H5) and MAT236H5 and at least 0.5 additional credit of MAT at the 300+ level with a mark of at least 65%]",
+      "prerequisites_list": ["or", "MAT257Y5", ["and", ["or", "MAT224H5", "MAT240H5"], "MAT236H5"]]
+    },
+    {
+      "code": "MAT406H5",
+      "title": "Mathematical Introduction to Game Theory",
+      "prerequisites": "MAT102H5 and (MAT223H5 or MAT240H5) and (STA246H5 or STA256H5)",
+      "prerequisites_list": ["and", "MAT102H5", ["or", "MAT223H5", "MAT240H5"], ["or", "STA246H5", "STA256H5"]]
+    },
+    {
+      "code": "MAT478H5",
+      "title": "Topics in Mathematics",
+      "prerequisites": "Appropriate prerequisite requirement(s) will be available on the UTM timetable along with the topic title prior to course registration.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT486H5",
+      "title": "Topics in Applied Mathematics",
+      "prerequisites": "Appropriate prerequisite requirement(s) will be available on the UTM timetable along with the topic title prior to course registration.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT488H5",
+      "title": "Topics in Mathematics",
+      "prerequisites": "Appropriate prerequisite requirement(s) will be available on the UTM timetable along with the topic title prior to course registration.",
+      "prerequisites_list": null
+    },
+    {
+      "code": "MAT492H5",
+      "title": "Senior Thesis",
+      "prerequisites": "MAT392H5 and 2.0 additional credits in MAT at the 300 level and a minimum CGPA of 2.5",
+      "prerequisites_list": ["and", "MAT392H5"]
+    }
+  ]
+}
